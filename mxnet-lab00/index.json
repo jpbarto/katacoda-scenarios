@@ -18,7 +18,8 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "initCourse.sh"
+      "courseData": "initCourse.sh",
+      "code": "startCourse.sh"
     },
     "finish": {
       "text": "finish.md"
