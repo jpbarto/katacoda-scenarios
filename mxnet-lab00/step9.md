@@ -1,5 +1,7 @@
 # Train the network
 
+`moving_loss` will be maintained as a moving average of the losses.
+
 `
 epochs = 1
 smoothing_constant = .01
@@ -14,9 +16,6 @@ for e in range(epochs):
         loss.backward()
         trainer.step(data.shape[0])
 
-        ##########################
-        #  Keep a moving average of the losses
-        ##########################
         curr_loss = nd.mean(loss).asscalar()
         moving_loss = (curr_loss if ((i == 0) and (e == 0))
                        else (1 - smoothing_constant) * moving_loss + smoothing_constant * curr_loss)
