@@ -4,10 +4,14 @@
 batch_size = 64
 num_inputs = 784
 num_outputs = 10
+`{{execute}}
 
+`
 def transform(data, label):
     return nd.transpose(data.astype(np.float32), (2,0,1))/255, label.astype(np.float32)
+`{{execute}}
 
+```python
 train_data = gluon.data.DataLoader(gluon.data.vision.MNIST(train=True, transform=transform), batch_size, shuffle=True)
 test_data = gluon.data.DataLoader(gluon.data.vision.MNIST(train=False, transform=transform), batch_size, shuffle=False)
-`{{execute}}
+```{{execute}}

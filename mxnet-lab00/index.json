@@ -1,6 +1,6 @@
 {
-  "title": "MXNet Lab #00",
-  "description": "The first MXNet lab on Katacoda",
+  "title": "Gluon in 60 seconds",
+  "description": "A crash course introduction to Gluon using MNIST and convolutional neural networks.",
   "details": {
     "steps": [
       {
