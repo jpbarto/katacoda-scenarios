@@ -1,0 +1,10 @@
+{
+    "course_id": "mxnet-gluon-crash_course",
+    "title": "Gluon in 60 seconds",
+    "description": "Crash course introduction to the Gluon and MXNet framework"
+},
+{
+    "course_id": "mxnet-gluon-linear_regression",
+    "title": "Linear Regression with Gluon",
+    "description": "Create a linear regression model using Gluon and very few lines of code"
+}
